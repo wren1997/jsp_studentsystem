@@ -55,7 +55,7 @@ public class serv_email extends HttpServlet {
                 // 邮件传输对象
                 Transport transport = session.getTransport();
                 // 传输连接：host，port，user，pass/主机，端口，用户名，密码
-                transport.connect("smtp.exmail.qq.com", 465, "me@zhengqiao.wang", "RJBnGFPrhMnr7FhC");
+                transport.connect("smtp.exmail.qq.com", 465, "me@zhengqiao.wang", "***********C");
                 // 发送邮件
                 transport.sendMessage(message, new Address[]{new InternetAddress(emailaddress)});
                 // 关闭连接
