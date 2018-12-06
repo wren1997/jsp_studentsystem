@@ -1,0 +1,167 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <!-- 学生列表 -->
+  <servlet>
+    <servlet-name>serv_student</servlet-name>
+    <servlet-class>serv.serv_student</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_student</servlet-name>
+    <url-pattern>/serv_student</url-pattern>
+  </servlet-mapping>
+  <!-- 学生编辑 -->
+  <servlet>
+    <servlet-name>serv_student_edit</servlet-name>
+    <servlet-class>serv.serv_student_edit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_student_edit</servlet-name>
+    <url-pattern>/serv_student_edit</url-pattern>
+  </servlet-mapping>
+  <!-- 学生上传 -->
+  <servlet>
+    <servlet-name>serv_student_upload_view</servlet-name>
+    <servlet-class>serv.serv_student_upload_view</servlet-class>
+    <init-param>
+      <param-name>filePath</param-name>
+      <param-value>store</param-value>
+    </init-param>
+    <init-param>
+      <param-name>tempFilePath</param-name>
+      <param-value>temp</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_student_upload_view</servlet-name>
+    <url-pattern>/serv_student_upload_view</url-pattern>
+  </servlet-mapping>
+  <!-- 成绩显示 -->
+  <servlet>
+    <servlet-name>serv_score</servlet-name>
+    <servlet-class>serv.serv_score</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_score</servlet-name>
+    <url-pattern>/serv_score</url-pattern>
+  </servlet-mapping>
+  <!-- *******************************************************成绩编辑 -->
+  <servlet>
+    <servlet-name>serv_score_edit</servlet-name>
+    <servlet-class>serv.serv_score_edit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_score_edit</servlet-name>
+    <url-pattern>/serv_score_edit</url-pattern>
+  </servlet-mapping>
+  <!-- *******************************************************邮件发送 -->
+  <servlet>
+    <servlet-name>serv_email</servlet-name>
+    <servlet-class>serv.serv_email</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_email</servlet-name>
+    <url-pattern>/serv_email</url-pattern>
+  </servlet-mapping>
+  <!-- *******************************************************课程管理 -->
+  <servlet>
+    <servlet-name>serv_subject</servlet-name>
+    <servlet-class>serv.serv_subject</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_subject</servlet-name>
+    <url-pattern>/serv_subject</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>serv_subject_edit</servlet-name>
+    <servlet-class>serv.serv_subject_edit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_subject_edit</servlet-name>
+    <url-pattern>/serv_subject_edit</url-pattern>
+  </servlet-mapping>
+  <!-- *******************************************************实验室管理 -->
+  <servlet>
+    <servlet-name>serv_lab</servlet-name>
+    <servlet-class>serv.serv_lab</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_lab</servlet-name>
+    <url-pattern>/serv_lab</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>serv_lab_edit</servlet-name>
+    <servlet-class>serv.serv_lab_edit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_lab_edit</servlet-name>
+    <url-pattern>/serv_lab_edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>serv_publicshow</servlet-name>
+    <servlet-class>serv.serv_publicshow</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_publicshow</servlet-name>
+    <url-pattern>/serv_publicshow</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>serv_randomcode</servlet-name>
+    <servlet-class>serv.serv_randomcode</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_randomcode</servlet-name>
+    <url-pattern>/serv_randomcode</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>serv_login</servlet-name>
+    <servlet-class>serv.serv_login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_login</servlet-name>
+    <url-pattern>/serv_login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>serv_manager</servlet-name>
+    <servlet-class>serv.serv_manager</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_manager</servlet-name>
+    <url-pattern>/serv_manager</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>serv_manager_edit</servlet-name>
+    <servlet-class>serv.serv_manager_edit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_manager_edit</servlet-name>
+    <url-pattern>/serv_manager_edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>serv_echarts</servlet-name>
+    <servlet-class>serv.serv_echarts</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_echarts</servlet-name>
+    <url-pattern>/serv_echarts</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>serv_pdf</servlet-name>
+    <servlet-class>serv.serv_pdf</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv_pdf</servlet-name>
+    <url-pattern>/serv_pdf</url-pattern>
+  </servlet-mapping>
+</web-app>
